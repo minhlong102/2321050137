@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 3</h1>
+    <!-- Danh sách (list)-->
+    <!-- Danh sách -->
+    <ol>
+        <p>Danh sách các việc làm buổi sáng</p>
+        <li>Thức dậy</li>
+        <li>Đánh răng</li>
+        <li>Ăn sáng</li>
+        <li>Đi học</li>
+        <li>Giao lao</li>
+        <li></li>
+    </ol>
+
+    <!-- ko có thứ tự <ul> -->
+    
+    <p>Các ngôn ngữ lập trình web</p>
+    <ul>
+       <li>Python</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li><C#></li>
+        
+    </ul>
+
+    <h1>Form</h1>
+    <form>
+        <div>
+            <b>Họ và tên: </b> <br>
+            <input type ="text" name="hoten" placeholder="Nhập tên vào đây">
+        </div>
+        <br>
+         <div>
+            <b>Năm: </b> <br>
+            <input type ="text" name="nam" value="2025" readonly>
+        </div>
+        <br>
+         <div>
+            <b>Giới thiệu chi tiết về bản thân: </b> <br>
+            <textarea name="giothieu" >Nhập giới thiệu</textarea>
+        </div>
+        <br>
+        <div>
+            <b>Email: </b> <br> 
+            <input type ="email" name="email" placeholder="Dạng gmail@.com">
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <b>SĐT</b><br> <input name="SĐT" type="tel" placeholder="Dạng số:09xxxxxxxx" 
+            required pattern="([0]{1}) ([0,3,9]{1}) ([0-9]{8})   ">
+        </div>
+        <br>
+        <div>
+            <b>Giới tính: </b> <br>
+            <input type ="radio" name="gioitinh" value="nam"> Nam <br> 
+            <input type ="radio" name="gioitinh" value="nu"> Nữ <br> 
+            <input type ="radio" name="gioitinh" value="khongxacdinh"> Không xác định <br> 
+        </div>
+        <br>
+        <div>  
+            <b>Sở thích</b> <br>
+            <input type ="checkbox" name="sothich" value="game"> Game <br> 
+            <input type ="checkbox" name="sothich" value="music"> Music <br> 
+            <input type ="checkbox" name="sothich" value="=sport"> Sport <br> 
+        </div>
+        <br>
+        <div>  
+            <b>Trình duyệt ưa thích</b> <br>
+            <input list ="browsers">
+            <datalist id="browsers">
+                <option value="Chorme">
+                <option value="FireFox">   
+                <option value="Oprea">
+                <option value="Internet Explorer">
+            </datalist>
+             
+        </div>
+        <br>
+        <div>  
+            <b>Trình duyệt ưa thích</b> <br>
+            <select name ="browsers">
+           
+                <option value="Chorme">Chorme </option>
+                <option value="FireFox">FireFox</option>
+                <option value="Oprea">Oprea</option>
+                <option value="Internet Explorer">Internet Explorer</option>
+            </datalist>
+            </select>
+        </div>
+        <br>
+        <div>   
+            0 <input type="range"value="36">100
+        </div>
+        <div>
+            <b>Tuổi</b> <br>
+            <input type="number" name="tuoi">
+        </div>
+        
+
+                <input type ="submit" >
+        
+    </form>
+
+
+
+</body>
+</html>
