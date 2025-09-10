@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.dautrang {
+    padding: 18px;
+    background-color:#2fa4e7;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.danhmuc {
+    margin-right: 29px;
+    color: white;
+    text-decoration: none;
+}
+.danhmuc:hover {
+    color: rgb(0, 0, 0);
+}
+.logo {
+    margin-top: 0px;
+    display: flex;
+    background-color: rgba(227, 239, 240, 0.8);
+    padding: 0px;  
+}
+.logo img {
+    width: 250px;   
+    height: auto;
+}
+
+.bentrai {
+    width: 80%
+}
+.tintuc {
+    padding-bottom: 20px;
+}
+.tieude{
+    color: white;
+    background-color: #2fa4e7;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-between;
+}
+.noidung {
+    display: flex;
+    gap: 10px;            
+    justify-content: flex-start;  
+}
+.baiviet {
+    flex: 1;               
+}
+
+.baiviettieude {
+    text-align: end;
+    color: rgb(81, 79, 79);
+    background-color: lightblue
+}
+.hinhanh {
+    background-color: white;
+}
+.hinhanh img {
+    width: 100%;   
+    height: auto; 
+    display: block; 
+}
+
+.BaiViet_NoiDung {
+    height: 20%;
+    background-color: lightblue;
+    text-align: justify;
+    padding: 10px;
+}
+.thongbao{
+    background-color: white;
+    margin-top: 10px;
+}
+.thongbaodanhsach{
+    display: flex;
+}
+.thongbaotrai{
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+}
+.main{
+    display: flex;
+    padding: 10px;
+}
+.thongbaotrailogo{
+    height: 70%;
+}
+.thongbaotraithoigian{
+    font-size: 15px;
+    margin-left: 50px;
+}
+.thongbaotrainghihoc{
+   font-size: 15px;
+   margin-bottom: 10px;
+}
+.thongbaophai{
+    width: 70%;
+}
+.thongbaophai table{
+    width: 100%;
+}
+.huongdantrai{
+    background-color: white;
+    padding: 0px;
+    margin-top: 10px;
+
+}
+.huongdantrai table{
+    width: 100%;
+    padding: 10px;
+}
+.noidunghuongdantrong{
+    width: 100%;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 0px;
+}
+.benphai {
+    width: 20%;
+    padding: 0;      /* bỏ padding trong */
+    margin: 0;       /* bỏ margin ngoài */
+}
+.qrappstore{
+    background-color: white;
+    margin-top: 0px;
+}
+.qrchplay{
+    background-color: white;
+    margin-top: 10px;
+}
+.qrappstore img, 
+.qrchplay img {  
+    width: 80%;   
+    height: auto;
+    display: block;  
+    margin: 0 auto; 
+}
+
+.phancuoi{
+    justify-content: center;
+    text-align: center;
+}
+.dangnhapphai form div {
+    margin-bottom: 10px;  
+}
+
+.dangnhapphai, .caidat {
+    margin: 0;
+    padding: 0;
+}
+
+.dangnhapphai input[type="text"],
+.dangnhapphai input[type="password"] {
+    width: 60%;  
+    box-sizing: border-box;
+}
+
