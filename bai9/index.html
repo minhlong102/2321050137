@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [1,2,3,4,5,'a','b','c',5,6];
+        // let p ="abc";
+        // //cach doc den 1 phan tu trong mang:, cach kiem tra do dai   document.writeln(arr.length);
+        // document.writeln(arr[1]+"<br>");
+        // // cach kiem tra phan tu co trong mang hay khong, neu co thi vi tri xuat hien thu may,neu khong thi -1
+        // document.writeln(arr.indexOf('a')+"<br>");
+        // document.writeln(arr.lastIndexOf(5)+"<br>");
+        // document.writeln(Array.isArray(arr)+"<br>"); //ktra xem co phai mang hay khong
+        // // noi 2 mang b, c voi a
+        // let a,b,c,d; 
+        // a = [1, 2, 3];
+        // b = "javaSc";
+        // c = [42,"vbScirpt"];
+        // d = a.concat(b,c);
+        // f = a.concat(b,c);
+        // e = d.pop();//lay phan tu cuoi cung cua mang
+        // f = d.push("Long")//them phan tu cuoi cung cua mang
+        // document.writeln(d+"<br>");
+        // document.writeln(d.join("-")+"<br>");// them "-" vao d
+        //  document.writeln(d.reverse()+"<br>");
+        // document.writeln(e+"<br>");
+        // document.writeln(f+"<br>");// ??? ddoanj nay tai sao ra 6, le ra phai ra mang va them phan tu "Long"
+        // //shift() : xoa phan tu dau tien cua mang arr.shift();
+        // // unshift() them phan tu vao dau mang arr.unshift(0);
+        // d[3] = 4;
+        let  today = new Date();
+        let  now = today.getHours();
+
+        if(now<10){
+            document.writeln("Chao buoi sang");
+
+        }else if( now>=10 && now<13) {
+            document.writeln("Chao buoi trua");
+        }
+         else if( now>=13 && now<17) {
+            document.writeln("Chao buoi chieu");
+         }
+         else if( now>=17 && now<22) {
+            document.writeln("Chao buoi toi");
+         }
+        else{
+           document.writeln("Chao buoi dem"); 
+        }
+
+        let so = "10000000000000000000000000000000000001"; 
+        // document.writeln(so[so.length-1]);
+        let soCuoiCung = parseInt((so[so.length-1]));
+        //kiemtra so la so chan/le
+        
+        if(so % 2==0)
+            document.writeln("So chan"); 
+        else{
+           document.writeln("So le"); 
+        }
+    </script>
+
+</body>
+</html>
