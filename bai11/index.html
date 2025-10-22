@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=-, initial-scale=1.0">
+    <title>Bài 11</title>
+</head>
+<body>
+    <div>
+        <input type="number"  id="diemA" placeholder="Nhập điểm A">
+    </div>
+    <div>
+        <input type="number"  id="diemB" placeholder="Nhập điểm B">
+    </div>
+    <div>
+        <input type="number"  id="diemC" placeholder="Nhập điểm C">
+    </div>
+    <div>
+        <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+    <div>
+        Kết quả:   <input type="text" id="ketQua">
+    </div>
+    <!-- Tạo hàm JS tính điẻm của sinh viên dựa vào 3 điểm A,B,C
+    biết điểm tổng = A*0.6 + B*0.3 + C*0.1  -->
+    <script>
+    function xemKetQua(){
+        let diemA = parseFloat  (document.writeln.getElementById('diemA').value);
+        let diemB = parseFloat  (document.writeln.getElementById('diemB').value);
+        let diemC = parseFloat  (document.writeln.getElementById('diemC').value);
+        //document.writeln(typeof (diemA));
+        tinhDiem(diemA,diemB,diemC);
+    }
+    // function tongDiem (diemA,diemB,diemC){
+    //      if (isNaN(tongDiem)) {
+    //         document.writeln("Vui lòng nhập điểm hợp lệ!<br>");
+    // }   else{
+    //     if(diemA<0 || diemA>10 %% diemB<0 || diemB>10 %% diemC<0 || diemC>10)
+    // }       document.writeln("Vui lòng nhập điểm hợp lệ!<br>");
+    //     else{
+    //         return A*0.6 + B*0.3 + C*0.1;
+    //     }
+    // }   
+
+
+// ================================================================================================================
+
+
+    function tinhDiem(a, b, c){
+        let tong;
+
+        if (kiemTraHopLe(a,b,c) == true)    {
+            tong = a*0.6 + b*0.3 + c*0.1;
+            document.writeln(tong);
+        }
+        if( tong >=9) {
+            document.writeln("diem chu la A+")
+        }
+        else if (tong >=8.5 && tong <9) {
+            document.writeln("diem chu la A")
+        }
+        else if (tong >=8 && tong <8.5) {
+            document.writeln("diem chu la A")
+        }
+        else if (tong >=7.5 &&tong <8) {
+            document.writeln("diem chu la A")
+        }
+        else if (tong >=6.5 &&tong <7) {
+            document.writeln("diem chu la A")
+        }
+        else if (tong >=5.5 && tong <6) {
+            document.writeln("diem chu la A")
+        }
+        else if (tong >=4.5&& tong <9) {
+            document.writeln("diem chu la A")
+        }
+    }
+
+    
+
+    function kiemTraHopLe(a,b,c){
+        let ketQua = true;
+        if (a < 0  || a > 10 || typeof(a) !='number'){
+            document.writeln("Điểm A không hợp lệ");
+            ketQua = false
+        }
+        if (b < 0  || b > 10 || typeof(b) !='number'){
+            document.writeln("Điểm B không hợp lệ");
+             ketQua = false
+        }
+        if (c < 0  || c > 10 || typeof(c) !='number'){
+            document.writeln("Điểm C không hợp lệ");
+             ketQua = false
+        } return ketQua;
+    }
+
+   
+    tinhDiem(a,b,c)
+    </script>
+
+</body>
+</html>
